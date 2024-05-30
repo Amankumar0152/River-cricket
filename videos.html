@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Player</title>
+<link rel="icon" href="icons/red-ball.png">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    nav {
+        background-color: #333;
+        padding: 10px 0;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    #video-container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+    @media only screen and (max-width: 1080px){
+        .video{
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div id="video-container">
+    <h1 id="video-title"></h1>
+    <p id="video-description"></p>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4PysGXO3Vw4?si=E8ntcHwXcbnALD6R" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe> <br> <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fVR2OICHpCs?si=JNXbD7JeyE4_qN-5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         
+</div>
+
+<script>
+    const videoPlayer = document.getElementById('video-player');
+    const videoTitle = document.getElementById('video-title');
+    const videoDescription = document.getElementById('video-description');
+
+    // Set the video title and description
+    videoTitle.innerText = "Fighting Scene";
+    videoDescription.innerText = "fighting story is very long...";
+
+    // Add event listeners for play and pause
+    videoPlayer.addEventListener('play', function() {
+        videoTitle.innerText = "Playing: " + videoTitle.innerText;
+    });
+
+    videoPlayer.addEventListener('pause', function() {
+        videoTitle.innerText = "Paused: " + videoTitle.innerText;
+    });
+</script>
+
+</body>
+</html>

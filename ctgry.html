@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Team</title>
+    <link rel="icon" href="icons/red-ball.png">
+    <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #edf;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container p{
+            text-align: center; 
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+       }
+        h1, h2 {
+            text-align: center;
+        }
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .categories button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #405de6;
+            color: #fff;
+        }
+        .categories button:hover {
+            background-color:#25D366;
+        }
+        .player-list {
+            display: none;
+        }
+        .player {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .player img {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .player-info {
+            flex-grow: 1;
+        }
+        .player h3 {
+            margin: 0 0 5px;
+            color: #333;
+        }
+        .player p {
+            margin: 0;
+            color: #666;
+        }
+        .player .instagram a {
+            display: inline-block;
+            background-color: #405de6;
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .player .instagram a:hover {
+            background-color: #6b7bff;
+        }
+
+        .container p a{
+            color: #405de6;
+            display: flex;
+            justify-content: start;
+        }
+        .container p a:hover{
+            color: #25D366;
+        }
+
+
+        @media only screen and (max-width: 700px){
+            .categories button {
+            padding: 5px 10px;
+            font-size: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #405de6;
+            color: #fff;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p><a href="team.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a></p>
+        <h1>Categorized Team</h1>
+        <p>Click each tab to View</p>
+        <div class="categories">
+            <button onclick="showCategory('all-rounder')">All-Rounders</button>
+            <button onclick="showCategory('batsman')">Batsmen</button>
+            <button onclick="showCategory('bowler')">Bowlers</button>
+            <button onclick="showCategory('wicket-keeper')">Wicket Keepers</button>
+            <button onclick="showCategory('uncategorized')">UnCategorized</button>
+        </div>
+        
+        <!-- All-Rounders -->
+        <div id="all-rounder" class="player-list">
+            <!-- Add all-rounders here -->
+            <!-- Example -->
+            <div class="player">
+                <img src="Players-image/tushar.png" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Tushar Anand</h3>
+                    <p>fast Bowler, Good Batting, Fielding...</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Aman.jpg" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Pirates Aman</h3>
+                    <p>fast Bowler, Good Batting, Fielding...</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Golu.png" alt="Priyanshi">
+                <div class="player-info">
+                    <h3>Golu (Haushila)</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            
+            <div class="player">
+                <img src="Players-image/Shubham.png" alt="r">
+                <div class="player-info">
+                    <h3>Shubham Dogra</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Tarun.png" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Appa-Gappa</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <!-- Batsmen -->
+        <div id="batsman" class="player-list">
+            <!-- Add batsmen here -->
+            <!-- Example -->
+            <div class="player">
+                <img src="Players-image/Sonu.jpg" alt="r">
+                <div class="player-info">
+                    <h3>Sonu Devdas</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            
+            <div class="player">
+                <img src="Players-image/Priyanshu.jpg" alt="Priyanshi">
+                <div class="player-info">
+                    <h3>Priyanshu</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/tushar.png" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Tushar Anand</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Aman.jpg" alt="r">
+                <div class="player-info">
+                    <h3>Pirates Aman</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Golu.png" alt="Priyanshi">
+                <div class="player-info">
+                    <h3>Rock Star Golu</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Shubham.png" alt="r">
+                <div class="player-info">
+                    <h3>Shubham Dogra</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            
+            <div class="player">
+                <img src="Players-image/Suraj.png" alt="r">
+                <div class="player-info">
+                    <h3>Suraj B</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Maurya.jpeg" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Maurya Ji</h3>
+                    <p>Left Hand Batsman</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Tarun.png" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Appa-Gappa</h3>
+                    <p>Right Hand Batsman</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!-- Bowlers -->
+        <div id="bowler" class="player-list">
+            <!-- Add bowlers here -->
+            <!-- Example -->
+            <div class="player">
+                <img src="Players-image/tushar.png" alt="Bowler">
+                <div class="player-info">
+                    <h3>Tushar</h3>
+                    <p>Fast Bowler, in over delivers Slow nakal Ball</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Aman.jpg" alt="Bowler">
+                <div class="player-info">
+                    <h3>Racer Aman</h3>
+                    <p>Fast Bowler, leg Spinner</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Shubham.png" alt="Bowler">
+                <div class="player-info">
+                    <h3>Shubham Dogra</h3>
+                    <p>Mid-term Bowler, leg spin, right spin, Air spin etc.</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Tarun.png" alt="Bowler">
+                <div class="player-info">
+                    <h3>Appa-Gappa</h3>
+                    <p>Fast & Slower Bowler, Both Side Spinner</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Golu.png" alt="Bowler">
+                <div class="player-info">
+                    <h3>Rocky Golu</h3>
+                    <p>Slow Off-spinner</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/soon.jpg" alt="Bowler">
+                <div class="player-info">
+                    <h3>Ajay (Soich)</h3>
+                    <p>Very-Fast Bowler with leg Spin</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/soon.jpg" alt="Bowler">
+                <div class="player-info">
+                    <h3>Cow Sharma</h3>
+                    <p>Fast Bowler, off-spinner, Delivers Maiden Over on Sunday</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/soon.jpg" alt="Bowler">
+                <div class="player-info">
+                    <h3>Kabir Singh</h3>
+                    <p>fast Spinner</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- Wicket Keepers -->
+        <div id="wicket-keeper" class="player-list">
+            <!-- Add wicket keepers here -->
+            <!-- Example -->
+            <div class="player">
+                <img src="Players-image/Priyanshu.jpg" alt="Priyanshi">
+                <div class="player-info">
+                    <h3>Priyanshu</h3>
+                    <p>WK</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/tushar.png" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Tushar Anand</h3>
+                    <p>WK</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Golu.png" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Rock Star Golu</h3>
+                    <p>WK</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Tarun.png" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Appa-Gappa</h3>
+                    <p>WK</p>
+                </div>
+            </div>
+            <div class="player">
+                <img src="Players-image/Aman.jpg" alt="All-Rounder">
+                <div class="player-info">
+                    <h3>Pirates Aman</h3>
+                    <p>WK</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Uncategorized Peoples -->
+    <div id="uncategorized" class="player-list">
+        <div class="player">
+            <img src="Players-image/Anand-maurya.png" alt="r">
+            <div class="player-info">
+                <h3>Anand Maurya</h3>
+                <p><strong>Emirates Umpire: </strong>Aankh band karke bata sakte hai ball kaha Gira hai!</p>
+            </div>
+        </div>
+
+        <div class="player">
+            <img src="Players-image/Kundan.jpg" alt="r">
+            <div class="player-info">
+                <h3>Kunj</h3>
+                <p><strong>TOP Viewers:</strong></p>
+            </div>
+        </div>
+        <div class="player">
+            <img src="Players-image/dhuaa.png" alt="r">
+            <div class="player-info">
+                <h3>Gajapatti Dhuaa</h3>
+                <p><strong>Total: </strong>Din me 14 Total = 140</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showCategory(category) {
+            const categories = ['all-rounder', 'batsman', 'bowler', 'wicket-keeper', 'uncategorized'];
+            categories.forEach(cat => {
+                document.getElementById(cat).style.display = 'none';
+            });
+            document.getElementById(category).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
