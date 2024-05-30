@@ -16,11 +16,14 @@ body{
     text-decoration: none;
     color: cornflowerblue;
 }
+.header h1 a:hover{
+    color: #13e362;
+}
 .image img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
     padding-bottom: 20px;
   }
 
