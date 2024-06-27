@@ -11,106 +11,116 @@
     background-color: white;
     color: black;
 }
-header{
-    font-size:3em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    height: 120px;
+
+.navbar {
+    background-color: #333;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 0.5rem 1rem;
 }
-.header p{
-    font-size: 2em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 10px;
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
 }
-.icon-img{
-    width: 7%;
-    height: auto;
-    
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
+
+.navbar-item {
+    position: relative;
+}
+
+.navbar-item a {
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-item a:hover {
+    background-color:cornflowerblue;
+}
+
+.arrow {
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ccc;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-menu li a {
+    color: black;
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar-toggler {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-item {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+}
+
 .dark-btn button{
-    width: 120px;
+    width: 140px;
     height: 30px;
     font-size: 16px;
     font-weight: bold;
     padding: 4px;
     background-color:lightblue;
+    border-radius: 20px;
 }
 .dark-btn button:hover{
     background-color:#25D366;
 }
 
-header1{
-    background-color:#081B31;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.menu-btn {
-    color:#fff;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 30px;
-    padding: 0;
-}
-
-.menu-btn span {
-    background-color: #fff;
-    display: block;
-    height: auto;
-    width: 30px;
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar {
-    display: none;
-    
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin-bottom: 10px;
-}
-
-.navbar ul li a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-
-.navbar ul li a:hover {
-    color:#25D366; /* Change color on hover */
-}
-
-.show {
-    display: block;
-}
-
-.menu-img{
-    width: 60%;
-    height: auto;
-}
-
 .contents{
     padding: 20px;
-    /* background-color:white; */
 }
 .image img{
     margin: 20px;
@@ -182,7 +192,6 @@ header1{
     padding: 10px;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* font-size: 16px; */
 }
 
 .row {
@@ -253,7 +262,7 @@ header1{
 }
 @media only screen and (max-width: 720px) {
     header{
-        font-size:20px;
+        font-size:16px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-align: center;
         height: 60px;
@@ -323,7 +332,7 @@ header1{
     }
     
     .header p{
-        font-size: 12px;
+        font-size: 10px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: center;
         padding: 10px;
