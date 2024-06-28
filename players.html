@@ -3,16 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players</title>
-    <link rel="stylesheet" href="css/all-teams.css">
+    <title>All Players Daniyalpur: River Cricket ground</title>
+    <link rel="stylesheet" href="css/players.css">
+    <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="icons/red-ball.png">
 </head>
 <body>
-    <div class="container">
-        <h1>Players</h1>
-        <div id="players">
-            <!-- Players will be dynamically added here -->
-        </div>
-    </div>
-    <script src="players.js"></script>
+    <header>
+        <h1>India National Cricket Team</h1>
+        <nav>
+            <a href="#">Results</a>
+            <a href="#">News</a>
+            <a href="#">Videos</a>
+            <a href="#">Photos</a>
+            <a href="#">Stats</a>
+            <a href="#" class="active">Players</a>
+        </nav>
+    </header>
+    <main>
+        <section class="player-list">
+            <div class="player-category">Batsmen</div>
+            <div class="player-item" onclick="location.href='player1.html';">
+                <img src="player1.jpg" alt="Virat Kohli" class="player-image">
+                <span class="player-name">Virat Kohli</span>
+                <span class="arrow">➔</span>
+            </div>
+            <div class="player-item" onclick="location.href='player2.html';">
+                <img src="player2.jpg" alt="Rohit Sharma" class="player-image">
+                <span class="player-name">Rohit Sharma</span>
+                <span class="arrow">➔</span>
+            </div>
+            <!-- Repeat for more players -->
+        </section>
+    </main>
 </body>
 </html>
