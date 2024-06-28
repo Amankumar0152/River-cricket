@@ -59,7 +59,7 @@ const players = [
             height: "5 ft 3 in (173 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
-            bowlingStyle: "Right-arm "
+            bowlingStyle: "Right-arm medium spin"
         }
     },
     {
@@ -133,8 +133,38 @@ const players = [
             nickname: "Mangal Grah",
             height: "4 ft 9 in (173 cm)",
             role: "Batsman",
+            battingStyle: "Left Handed Bat",
+            bowlingStyle: "Left-arm very fast"
+        }
+    },
+    {
+        id: 10,
+        name: "Nishan",
+        image: "profile/maurya-ji.jpeg",
+        country: "India",
+        info: {
+            born: "NA",
+            birthPlace: "Varanasi",
+            nickname: "Maurya Ji",
+            height: "4 ft 9 in (173 cm)",
+            role: "Batsman",
+            battingStyle: "Left Handed Bat",
+            bowlingStyle: "Left-arm fast"
+        }
+    },
+    {
+        id: 11,
+        name: "Anand",
+        image: "profile/anand.png",
+        country: "India",
+        info: {
+            born: "April 30, 1987 (34 years)",
+            birthPlace: "Varanasi",
+            nickname: "Mahavir",
+            height: "5 ft 2 in (173 cm)",
+            role: "Batsman",
             battingStyle: "Right Handed Bat",
-            bowlingStyle: "Right-arm very fast"
+            bowlingStyle: "Right-arm medium"
         }
     },
     // Add more players here

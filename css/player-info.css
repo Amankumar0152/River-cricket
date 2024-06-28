@@ -95,8 +95,8 @@ body {
   }
   
   .player-details img {
-    width: 100px;
-    height: 100px;
+    width: 25%;
+    height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
   }
