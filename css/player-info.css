@@ -108,7 +108,7 @@ body {
     }
   
     .player-list, .player-details {
-        width: 100%;
+        width: 90%;
         border-radius: 0;
     }
   }

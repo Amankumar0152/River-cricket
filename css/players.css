@@ -75,7 +75,7 @@ nav a.active, nav a:hover {
 }
 
 .arrow {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #007BFF;
 }
 
@@ -86,8 +86,14 @@ nav a.active, nav a:hover {
     }
 
     .player-list {
-        width: 100%;
+        width: 90%;
         border-radius: 0;
+    }
+    .player-image {
+        width: 15%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 20px;
     }
 }
 
@@ -102,5 +108,11 @@ nav a.active, nav a:hover {
 
     .arrow {
         font-size: 1.5em;
+    }
+    .player-image {
+        width: 12%;
+        height: auto;
+        border-radius: 50%;
+        margin-right: 20px;
     }
 }
