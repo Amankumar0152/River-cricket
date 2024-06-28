@@ -80,7 +80,7 @@ const players = [
     {
         id: 6,
         name: "Aman",
-        image: "profile/aman.jpg",
+        image: "profile/pirates.jpg",
         country: "India",
         info: {
             born: "NA",
@@ -100,7 +100,7 @@ const players = [
         info: {
             born: "NA",
             birthPlace: "Varanasi",
-            nickname: "Sadhu",
+            nickname: "Devdas",
             height: "5 ft 2 in (173 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
@@ -110,7 +110,7 @@ const players = [
     {
         id: 8,
         name: "Tarun",
-        image: "profile/tarun.png",
+        image: "profile/dog.jpg",
         country: "India",
         info: {
             born: "NA",
