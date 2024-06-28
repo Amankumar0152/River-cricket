@@ -3,315 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Players</title>
-    <link rel="icon" href="icons/red-ball.png">
+    <title>Browse Teams</title>
+    <link rel="stylesheet" href="css/team.css">
     <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        .container p a{
-            text-decoration: none;
-            color: #405de6;
-        }
-        .container p a:hover{
-            color: #25D366;
-        }
-        .container h3 a{
-            text-decoration: none;
-            color: #405de6;
-            font-size:20px;
-        }
-        .container h3 a:hover{
-            color: #25D366;
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color:rgba(237, 237, 237, 0.86);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-        }
-        .player {
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .player img {
-            width: 80px;
-            height: auto;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-        .player-info {
-            flex-grow: 1;
-        }
-        .player h2 {
-            margin: 0 0 5px;
-            color: #333;
-        }
-        .player p {
-            margin: 0;
-            color: #666;
-        }
-        .player .weakness {
-            font-style: italic;
-            color: #FF5733;
-        }
-        .player .instagram {
-            margin-top: 10px;
-        }
-        .player .instagram a {
-            display: inline-block;
-            background-color: #405de6;
-            color: #fff;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        .player .instagram a:hover {
-            background-color: #6b7bff;
-        }
-        @media only screen and (max-width: 720px){
-            .ctrl{
-                width: 300px;
-                height: 50px;
-            }
-        }
-        @media only screen and (max-width: 480px){
-            .ctrl{
-                width: 250px;
-                height: 50px;
-            }
-        }
-        @media only screen and (max-width: 375px){
-            .ctrl{
-                width: 150px;
-                height: 50px;
-            }
-        }
-    </style>
+    <link rel="icon" href="icons/red-ball.png">
 </head>
 <body>
-    <div class="container">
-        <p><a href="index.html"><i class="fa-solid fa-arrow-left fa-2xl"></i></a></p>
-        <p><a href="category.html"><i class="fa-solid fa-arrow-right fa-2xl"></i></a></p>
-        <h1>Daniyalpur Team</h1>
-        <h3><a href="category.html">Team Category <i class="fa-solid fa-circle-left fa-beat fa-lg" style="color: #B197FC;"></i></a></h3>
-        
-        <div class="player">
-            <img src="Players-image/Kundan.jpg" alt="community Manager">
-            <div class="player-info">
-                <h2>Kunj</h2>
-                <p style="color:#405de6"><b>Community Manager:</b> </p>
-                <p><strong>Specialty:</strong> Run upto 30 minutes</p>
-                <p><strong>Right Hand Batsman:</strong> from both</p>
-                <p><strong>Weakness:</strong> Don't Know How to play Cricket</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/kunj__maurya/" target="_blank">Follow on Instagram</a>
-                </div>
-            </div>
+    <header>
+        <h1>Browse Teams Cricket Team</h1>
+        <nav>
+            <a href="#" class="active">International</a>
+            <a href="#">Domestic</a>
+            <a href="#">League</a>
+            <a href="#">Women</a>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search Team">
         </div>
-        <div class="player">
-            <img src="Players-image/Anand-maurya.png" alt="The-Great-Khali">
-            <div class="player-info">
-                <h2>Anand Maurya</h2>
-                <p style="color:#405de6"><b>Ground Manager:</b> </p>
-                <p><strong>Specialty:</strong> BREAKS ALL RECORDS: Khelte kam hai, Kaptani jyada karte hai! Cheating bhi karte hai. thoda nahi bahut jyada.</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Nothing: Apne man ka karte hai ye, Koi rokne wala nahi hai!</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/p/C0n0XyUPN7A/" target="_blank">Follow on Instagram</a>
-                </div>
+    </header>
+    <main>
+        <section class="team-list">
+            <div class="team-category">Test Teams</div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="icons/red-ball.png" alt="India" class="team-flag">
+                <span class="team-name">Daniyalpur</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/Shubham.png" alt="Canva">
-            <div class="player-info">
-                <h2>Shubham Dogra</h2>
-                <p><strong>Specialty:</strong> Mid-order Batsman</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> FIX: Bowling, 1 over me 6 Hawa me, 4 niche No ball fekte hai...</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/ariseshubh/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='team2.html';">
+                <img src="profile/sonu.jpg" alt="Sundy" class="team-flag">
+                <span class="team-name">Banarakas</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/Golu.png" alt="haushila">
-            <div class="player-info">
-                <h2>Star Golu</h2>
-                <p><strong>Specialty:</strong> Captain, Top-order Batsman</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> 1 Over me 3-4 six--fix</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/_rocky_raj_vns/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="profile/tbc.png" alt="tbc" class="team-flag">
+                <span class="team-name">TBC</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/tushar.png" alt="How-How">
-            <div class="player-info">
-                <h2>Tushar Anand</h2>
-                <p><strong>Specialty:</strong> Top-order batsman, Khelne me bahoot hi badhiya! log inhe Pow Pow, How How, Khau, Khau, Chow Chow ke naam se bhi jante hai!</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Not Available</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/_tushar_kaithwas_0062/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="profile/tbc.png" alt="tbc" class="team-flag">
+                <span class="team-name">TBC</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/Aman.jpg" alt="Pirates-Aman">
-            <div class="player-info">
-                <h2>Pirates Aman</h2>
-                <p><strong>Specialty:</strong> Captain, Top-order Batsman</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Kuch Keh, nahi sakte, Outside off-stump deliveries</p>
-                <div class="instagram">
-                    <a href="https://www.amankumar.cloud/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="profile/tbc.png" alt="tbc" class="team-flag">
+                <span class="team-name">TBC</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/Priyanshu.jpg" alt="Priyanshi">
-            <div class="player-info">
-                <h2>Priyanshu Francise</h2>
-                <p><strong>Specialty:</strong> Top-order Opener Batsman! opening batting ke saath saath Jadu tona bhi karna jante hai! Harte huye Match ko Jita sakte hai!!</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Hardik Pandya kah sakte hai, chal gaye to bahut jyada mar dete hai! nahi to pavilion jate huye nazar aayenge!</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/priyanshumaurya3/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="profile/tbc.png" alt="tbc" class="team-flag">
+                <span class="team-name">TBC</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/Sonu.jpg" alt="bhkk-bsdk">
-            <div class="player-info">
-                <h2>Sonu Devdas</h2>
-                <p><strong>Specialty:</strong> Top-order Batsman</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Pune se aane ke baad sirf laad chate hai! kahde kahde Over kha jate hai koi kuch bol nahi pata...</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/sonumaurya72/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="profile/tbc.png" alt="tbc" class="team-flag">
+                <span class="team-name">TBC</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/Suraj.png" alt="west-of-Bengal">
-            <div class="player-info">
-                <h2>Suraj Bengoli</h2>
-                <p><strong>Specialty:</strong> Fast Spinner bowler hai, No ball ke bahut hi jyada chance hai... </p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Batting kaise karna hai bar bar batana padta hai</p>
-                <p><strong>favourite Song: </strong></p>
-                <audio controls class="ctrl" >
-                    <source src="audio/Chahe Koi Mujhe Junglee Kahe.mp3" type="audio/mpeg">
-                  </audio>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/maurya___yashu/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="profile/tbc.png" alt="tbc" class="team-flag">
+                <span class="team-name">TBC</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/Maurya.jpeg" alt="maurya-Ji">
-            <div class="player-info">
-                <h2>Maurya Ji</h2>
-                <p><strong>Specialty:</strong> Bahut khatarnak Batting ke saath, hawa me hi ball ko swing karate hai...</p>
-                <p><strong>Right Hand Batsman:</strong> Left Hand batsman</p>
-                <p><strong>Weakness:</strong> Maurya Ji bahut hi jane mane Khiladi hai, Balle baji aaisi karte hai bat se ball jaldi touch nhi hoti, hoti bhi hai to catch Ho jati hai</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/nishanmaurya53/" target="_blank">Follow on Instagram</a>
-                </div>
+            <div class="team-item" onclick="location.href='#';">
+                <img src="profile/tbc.png" alt="tbc" class="team-flag">
+                <span class="team-name">TBC</span>
+                <span class="arrow">➔</span>
             </div>
-        </div>
-       
-        <div class="player">
-            <img src="Players-image/Tarun.png" alt="Pappe">
-            <div class="player-info">
-                <h2>Appa-Gappa</h2>
-                <p><strong>Specialty:</strong> Top-order Batsman, Chillane, Gali galoj karne me aage, Bahut jaldi kisi ka bhi marne ko taiyar...</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Chhota hone ke karan, kahi bhi ghus jata hai, (without oil)... <br>
-                            eg: Sahab ke khet me bass ke niche se ball lane ke liye...</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/ak_maurya1010/" target="_blank">Follow on Instagram</a>
-                </div>
-            </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/khalnayak.jpeg" alt="Chat-le-Chat-le">
-            <div class="player-info">
-                <h2>kohinoor Ch*t*u</h2>
-                <p><strong>Specialty:</strong> Sip Sip 😋😋 10sa, TT, ander bahar, sab chalta rhta hai inka Match me...</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> miss fielding</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/kohinoor_vinay_maurya/" target="_blank">Follow on Instagram</a>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="player">
-            <img src="Players-image/lamb.jpg" alt="Lamb">
-            <div class="player-info">
-                <h2>Shivam Lamb</h2>
-                <p style="color:#405de6"><b>World Guiness Record:</b> Ek baar me ball kabhi nahi pakde</p>
-                <p><strong>Specialty:</strong> Kaptani karne par hi Bowling batting milta hai, 20 Rupya jitne ke liye kisi aur se fekwa lete hai 😂😂</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> kuch bhi, Catch Chodna, batting thik se n karna</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/shivammauryashiva/" target="_blank">Follow on Instagram</a>
-                </div>
-            </div>
-        </div> -->
-        <div class="player">
-            <img src="Players-image/dhuaa.png" alt="Shashi-Prakash-Chandan">
-            <div class="player-info">
-                <h2>Gajapatti Dhuaa</h2>
-                <p><strong>Specialty:</strong> Din bhar me 14 matlab 1 din ka 140 rupya, 30-35 tak chal jayega...</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Dhuaa Dhuaa</p>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/mahakal_ojha123/" target="_blank">Follow on Instagram</a>
-                </div>
-            </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/soon.jpg" alt="Nakchuan">
-            <div class="player-info">
-                <h2>China-mOOn</h2>
-                <p><strong>Specialty:</strong> Top-order Batsman, Bina Ghee Tel ke sab balls haath me chipaka leta hai ek bhi ball miss nahi karta fielding ke dauran</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Leg-spin bowling</p>
-                <div class="instagram">
-                    <a href="#coming-soonsdaf#29834FAFAF32" target="_blank">Follow on Instagram</a>
-                </div>
-            </div>
-        </div>
-        <div class="player">
-            <img src="Players-image/soon.jpg" alt="Bangi-Middle-Son">
-            <div class="player-info">
-                <h2>Cow Sharma 🐄</h2>
-                <p><strong>Specialty:</strong> Fast Bowler, Sunday ko Maiden Over Dalte hai, bache huye din pelate rhte hai</p>
-                <p><strong>Right Hand Batsman:</strong> Yes</p>
-                <p><strong>Weakness:</strong> Batting</p>
-                <div class="instagram">
-                    <a href="#coming-soonsdaf#29834FAFAF32" target="_blank">Follow on Instagram</a>
-                </div>
-            </div>
-        </div>
-        <!-- Add more players as needed -->
-    </div>
+            <!-- Repeat for more teams -->
+        </section>
+    </main>
 </body>
 </html>
