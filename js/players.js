@@ -26,7 +26,7 @@ const players = [
             born: "NA",
             birthPlace: "Varanasi",
             nickname: "Arun",
-            height: "5 ft 8 in (173 cm)",
+            height: "5 ft 7 in (173 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
             bowlingStyle: "Right-arm fast"
@@ -41,7 +41,7 @@ const players = [
             born: "NA",
             birthPlace: "Varanasi",
             nickname: "Kumar",
-            height: "5 ft 0.1 in (168 cm)",
+            height: "4 ft 8 in (146 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
             bowlingStyle: "Right-arm offbreak"
