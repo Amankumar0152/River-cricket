@@ -1,4 +1,4 @@
-let modeBtn = document.querySelector(".darktheme");
+let modeBtn = document.querySelector(".dark-mode");
 let body = document.querySelector("body");
 let currentmode = "light";
 

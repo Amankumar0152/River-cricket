@@ -12,6 +12,36 @@
     color: black;
 }
 
+.dark-mode{
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    margin: 10px;
+}
+.dark-mode button {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 20px;
+}
+.dark-mode button:hover{
+    background-color: #25D366;
+}
+
+/* .darktheme{
+    width: 140px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:lightblue;
+    border-radius: 20px;
+}
+.darktheme:hover{
+    background-color:#25D366;
+} */
+
+
 .navbar {
     background-color: #333;
     display: flex;
@@ -44,7 +74,9 @@
 }
 
 .navbar-item a:hover {
-    background-color:cornflowerblue;
+    background-color:#25D366;
+    border-radius: 20px;
+    /* color: rgb(3, 92, 225); */
 }
 
 .arrow {
@@ -104,19 +136,13 @@
     .navbar-menu.show {
         display: flex;
     }
-}
-
-.dark-btn button{
-    width: 140px;
-    height: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 4px;
-    background-color:lightblue;
-    border-radius: 20px;
-}
-.dark-btn button:hover{
-    background-color:#25D366;
+    .dark-mode button {
+        font-size: 14px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        padding: 7px;
+        border-radius: 20px;
+    }
 }
 
 .contents{
