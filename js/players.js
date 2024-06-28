@@ -101,7 +101,7 @@ const players = [
             born: "NA",
             birthPlace: "Varanasi",
             nickname: "Devdas",
-            height: "5 ft 2 in (173 cm)",
+            height: "5 ft 10 in (167 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
             bowlingStyle: "Right-arm fast"
