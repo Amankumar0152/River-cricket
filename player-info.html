@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Details</title>
+    <link rel="stylesheet" href="css/player-info.css">
+</head>
+<body>
+    <header>
+        <h1 id="player-name-header">Player Name</h1>
+        <nav>
+
+            <a href="players.html" class="active">Datails</a>
+        </nav>
+    </header>
+    <main>
+        <div class="tab-container">
+            <button class="tab-button active" onclick="openTab(event, 'info')">Info</button>
+            <button class="tab-button" onclick="openTab(event, 'batting')">Batting</button>
+            <button class="tab-button" onclick="openTab(event, 'bowling')">Bowling</button>
+            <button class="tab-button" onclick="openTab(event, 'career')">Career</button>
+            <button class="tab-button" onclick="openTab(event, 'news')">News</button>
+        </div>
+        <div id="info" class="tab-content active">
+            <section class="player-details">
+                <img id="player-image" src="" alt="Player Image" class="player-image-large">
+                <h2 id="player-name">Player Name</h2>
+                <p id="player-country">Country</p>
+                <table id="player-info">
+                    <tbody>
+                        <!-- Dynamic content will be injected here -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <div id="batting" class="tab-content">
+            <p>Batting statistics and information will be shown here.</p>
+        </div>
+        <div id="bowling" class="tab-content">
+            <p>Bowling statistics and information will be shown here.</p>
+        </div>
+        <div id="career" class="tab-content">
+            <p>Career information will be shown here.</p>
+        </div>
+        <div id="news" class="tab-content">
+            <p>News related to the player will be shown here.</p>
+        </div>
+    </main>
+    <script src="js/players.js"></script>
+</body>
+</html>
