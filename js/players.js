@@ -116,7 +116,7 @@ const players = [
             born: "NA",
             birthPlace: "Varanasi",
             nickname: "Appa-Gappa",
-            height: "3 ft 2 in (173 cm)",
+            height: "3 ft 2 in (96.52 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
             bowlingStyle: "Right-arm fast medium Spin"
