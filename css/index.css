@@ -28,18 +28,26 @@
 .dark-mode button:hover{
     background-color: #25D366;
 }
-
-/* .darktheme{
-    width: 140px;
-    height: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color:lightblue;
-    border-radius: 20px;
+/* Initial styles for hidden elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Adjust the translateY value for your desired effect */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Duration and easing of the transition */
 }
-.darktheme:hover{
-    background-color:#25D366;
-} */
+
+/* Class to trigger the animation */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: Add container styling */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
 
 
 .navbar {
@@ -53,6 +61,7 @@
 .navbar-brand {
     color: white;
     font-size: 1.5rem;
+    user-select: none;
 }
 
 .navbar-menu {
