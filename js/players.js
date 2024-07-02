@@ -50,7 +50,7 @@ const players = [
     {
         id: 4,
         name: "Tushar",
-        image: "profile/tushar.png",
+        image: "profile/how.png",
         country: "India",
         info: {
             born: "NA",
@@ -165,6 +165,21 @@ const players = [
             role: "Batsman",
             battingStyle: "Right Handed Bat",
             bowlingStyle: "Right-arm medium"
+        }
+    },
+    {
+        id: 32,
+        name: "Shivam",
+        image: "profile/kabir.png",
+        country: "India",
+        info: {
+            born: "NA",
+            birthPlace: "Varanasi",
+            nickname: "Maurya Ji",
+            height: "5 ft 1 in (173 cm)",
+            role: "Batsman",
+            battingStyle: "Right Handed Bat",
+            bowlingStyle: "NA"
         }
     },
     // Add more players here
