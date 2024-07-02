@@ -331,6 +331,11 @@
         color: #25D366;
         padding: 16px;
     }
+    .navbar-list ul li{
+        padding: 6px;
+        margin: 2px;
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 344px){
     .contents h2{
