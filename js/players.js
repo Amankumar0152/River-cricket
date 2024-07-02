@@ -175,7 +175,7 @@ const players = [
         info: {
             born: "NA",
             birthPlace: "Varanasi",
-            nickname: "Maurya Ji",
+            nickname: "Kabir",
             height: "5 ft 1 in (173 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
