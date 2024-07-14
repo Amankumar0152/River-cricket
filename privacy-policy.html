@@ -68,28 +68,5 @@
 
     <h2>Conclusion</h2>
     <p>Thank you for visiting [River Cricket Ground]. We are committed to protecting your privacy and providing a secure online experience.</p>
-
-
-    <div class="dark-mode-toggle">
-        <h2>
-            <button onclick="toggleDarkMode()">Dark Theme <i class="fa-regular fa-moon" id="theme-icon"></i></button>
-        </h2>
-    </div>
-
-    <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
-            
-            const themeIcon = document.getElementById('.theme-icon');
-            if (body.classList.contains('dark-mode')) {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            }
-        }
-    </script>
 </body>
 </html>
