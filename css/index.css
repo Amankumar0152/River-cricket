@@ -148,7 +148,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid cornflowerblue;
 }
 .cntext{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -157,7 +156,6 @@
 }
 
 .slideshow-container {
-    border: solid cornflowerblue 3px;
     max-width: 80%;
     position: relative;
     margin: auto;
