@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -65,5 +68,28 @@
 
     <h2>Conclusion</h2>
     <p>Thank you for visiting [River Cricket Ground]. We are committed to protecting your privacy and providing a secure online experience.</p>
+
+
+    <div class="dark-mode-toggle">
+        <h2>
+            <button onclick="toggleDarkMode()">Dark Theme <i class="fa-regular fa-moon" id="theme-icon"></i></button>
+        </h2>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+            
+            const themeIcon = document.getElementById('.theme-icon');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+    </script>
 </body>
 </html>
