@@ -138,6 +138,13 @@
     }
 }
 
+.front-text{
+    background-color:#bcd6f4;
+    padding: 5px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .contents{
     padding: 20px;
 }
