@@ -31,9 +31,6 @@
     margin-top: 50px;
 }
 
-
-
-
 .navbar {
     background-color: #333;
     display: flex;
@@ -237,7 +234,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .footer{
-    /* height: 1200px; */
     padding-bottom: 20px;
 }
 .note{
@@ -249,34 +245,12 @@
     justify-content:center;
     align-items: center;
 }
-.qr h1{
-    padding: 10px;
-}
 .qr img{
     width: 30%;
     border-radius: 20px;
     height: auto;
 }
 
-
-.navbar-list ul li{
-    padding: 6px;
-    margin: 10px;
-}
-.navbar-list ul li a{
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:cornflowerblue;
-}
-.navbar-list ul li a:hover{
-    color: #25D366;
-    text-decoration:underline;
-}
-.navbar-list h2{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 20px;
-}
 .map{
     margin-top: 35px;
 }
