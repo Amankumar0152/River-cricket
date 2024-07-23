@@ -28,7 +28,8 @@ body {
 }
 
 .footer-section h4 {
-    color: #333;
+    /* color: #333; */
+    color:#333;
     margin-bottom: 10px;
 }
 
