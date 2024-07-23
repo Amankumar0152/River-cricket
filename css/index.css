@@ -33,6 +33,7 @@
 
 .navbar {
     background-color: #333;
+    /* background: linear-gradient(#487dd8, #ed8224); */
     display: flex;
     justify-content: space-between;
     align-items: center;
