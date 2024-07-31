@@ -65,4 +65,5 @@ body {
         flex-direction: column; /* Stack the image above the text on small screens */
         padding: 20px;
     }
+    
 }
