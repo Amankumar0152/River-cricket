@@ -1,2 +1,1 @@
-# No authorized sellers
-pub-1969950131013352
+google.com, pub-1969950131013352, DIRECT, f08c47fec0942fa0
