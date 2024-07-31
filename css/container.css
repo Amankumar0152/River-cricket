@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.advert-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f4f8;
+    flex-wrap: wrap; /* Make the section flexible and wrap on smaller screens */
+}
+
+.advert-content {
+    max-width: 600px;
+    flex: 1 1 300px; /* Flex grow, shrink, and basis for responsive layout */
+}
+
+.advert-title {
+    font-size: 36px;
+    color: #1a2b40;
+    margin-bottom: 20px;
+}
+
+.advert-paragraph {
+    font-size: 18px;
+    color: #33475b;
+    margin-bottom: 20px;
+}
+
+.advert-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0061f2;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.advert-button:hover {
+    background-color: #004dbd;
+}
+
+.advert-image {
+    flex: 1 1 300px; /* Flex grow, shrink, and basis for responsive layout */
+    display: flex;
+    justify-content: center;
+}
+
+.advert-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .advert-section {
+        flex-direction: column-reverse; /* Stack the image above the text on small screens */
+        padding: 20px;
+    }
+}
