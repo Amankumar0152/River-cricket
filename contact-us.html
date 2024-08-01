@@ -21,12 +21,6 @@
     <div class="cf-turnstile" data-sitekey="0x4AAAAAAAgQlpsudfSw6DLN" data-callback="javascriptCallback"></div>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
 </head>
-<form action="/login" method="POST">
-    <input type="text" placeholder="username"/>
-    <input type="password" placeholder="password"/>
-    <div class="cf-turnstile" data-sitekey="<0x4AAAAAAAgQlpsudfSw6DLN>"></div>
-    <button type="submit" value="Submit">Log in</button>
- </form>
     <div class="container">
         <div class="header">
             <h1>Connect Us</h1>
@@ -47,6 +41,12 @@
             <a href="#thread"><i class="fa-brands fa-threads"></i></a>
         </div>
     </div>
+    <form action="/login" method="POST">
+        <input type="text" placeholder="username"/>
+        <input type="password" placeholder="password"/>
+        <div class="#example-container" data-sitekey="<0x4AAAAAAAgQlpsudfSw6DLN>"></div>
+        <button type="submit" value="Submit">Log in</button>
+     </form>
     <script>
         window.onloadTurnstileCallback = function () {
     turnstile.render('#example-container', {
