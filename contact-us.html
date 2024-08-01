@@ -47,5 +47,15 @@
             <a href="#thread"><i class="fa-brands fa-threads"></i></a>
         </div>
     </div>
+    <script>
+        window.onloadTurnstileCallback = function () {
+    turnstile.render('#example-container', {
+        sitekey: '<0x4AAAAAAAgQlpsudfSw6DLN>',
+        callback: function(token) {
+            console.log(`Challenge Success ${token}`);
+        },
+    });
+};
+    </script>
 </body>
 </html>
