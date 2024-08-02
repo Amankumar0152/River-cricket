@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-.advert-section {
+.promo-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -13,24 +13,26 @@ body {
     flex-wrap: wrap; /* Make the section flexible and wrap on smaller screens */
 }
 
-.advert-content {
+.promo-content {
     max-width: 600px;
     flex: 1 1 300px; /* Flex grow, shrink, and basis for responsive layout */
 }
 
-.advert-title {
+.promo-title {
+    padding: 15px 0px 0px 10px;
     font-size: 36px;
     color: #1a2b40;
     margin-bottom: 20px;
 }
 
-.advert-paragraph {
+.promo-paragraph {
+    padding: 15px 0px 0px 10px;
     font-size: 18px;
     color: #33475b;
     margin-bottom: 20px;
 }
 
-.advert-button {
+.promo-button {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
@@ -41,17 +43,17 @@ body {
     transition: background-color 0.3s;
 }
 
-.advert-button:hover {
+.promo-button:hover {
     background-color: #004dbd;
 }
 
-.advert-image {
+.promo-image {
     flex: 1 1 300px; /* Flex grow, shrink, and basis for responsive layout */
     display: flex;
     justify-content: center;
 }
 
-.advert-image img {
+.promo-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -59,8 +61,9 @@ body {
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    .advert-section {
-        flex-direction: column-reverse; /* Stack the image above the text on small screens */
+    .promo-section {
+        flex-direction: column; /* Stack the image above the text on small screens */
         padding: 20px;
     }
+    
 }
