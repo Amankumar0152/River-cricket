@@ -1,11 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('popup');
-    const closeButton = document.getElementById('close-button');
+    const closeButton = document.getElementById('close-popup');
 
-    closeButton.addEventListener('click', function() {
-        popup.style.display = 'none';
-        document.body.style.overflow = 'auto'; // Allow background scrolling
+    if (!sessionStorage.getItem('popupShown')) {
+        popup.style.display = 'flex';
+        setTimeout(() => {
+            popup.style.opacity = '1';
+        }, 100);
+        sessionStorage.setItem('popupShown', 'true');
+    }
+
+    closeButton.addEventListener('click', () => {
+        popup.style.opacity = '0';
+        setTimeout(() => {
+            popup.style.display = 'none';
+        }, 500);
     });
 
-    popup.style.display = 'flex';
+    popup.addEventListener('click', (event) => {
+        if (event.target === popup) {
+            popup.style.opacity = '0';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 500);
+        }
+    });
 });
