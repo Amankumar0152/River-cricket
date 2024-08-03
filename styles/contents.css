@@ -14,10 +14,6 @@ body {
     padding: 20px;
 }
 
-.title h3{
-    text-align: center;
-    margin: 10px;
-}
 .contents-img{
     width: 65%;
     display: block;
@@ -30,7 +26,9 @@ body {
     .contents-img{
         width: 100%;
     }
-    .title h3{
-        text-align: start;
-    }
+    .title p{
+        font-size: 14px;
+        text-align: left;
+        padding: 20px;
+    }    
 }

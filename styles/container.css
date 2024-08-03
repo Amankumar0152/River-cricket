@@ -32,17 +32,6 @@ body {
     margin-bottom: 20px;
 }
 
-.promo-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #0061f2;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
 .promo-button:hover {
     background-color: #004dbd;
 }
