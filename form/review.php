@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email configuration
-    $to = "amanghostvilla@gmail.com";
+    $to = "amankumarmaurya93@gmail.com";
     $subject = "New Comment from " . $name;
     $message = "Name: " . $name . "\nEmail: " . $email . "\n\nComment:\n" . $comment;
     $headers = "From: " . $email;
