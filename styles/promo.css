@@ -54,5 +54,8 @@ body {
         flex-direction: column; /* Stack the image above the text on small screens */
         padding: 20px;
     }
+    .promo-image{
+        max-width: 100%;
+    }
     
 }
