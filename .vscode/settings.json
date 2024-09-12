@@ -1,4 +1,6 @@
 {
     "liveServer.settings.port": 5501,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": true,
+    "editor.minimap.autohide": false
 }
