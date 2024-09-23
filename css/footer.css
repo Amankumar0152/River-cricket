@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .footer {
-    color: #333;
-    background-color: #fff;
+    /* color: #ccc; */
+    background-color: #333;
 }
 
 .footer-content {
@@ -27,12 +27,13 @@ body {
 }
 
 .footer-section h4 {
-    color: #25D366;
+    color: #007BFF;
     margin-bottom: 10px;
+    user-select: none;
 }
 
 .footer-section a {
-    color: cornflowerblue;
+    color: #ccc;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -45,7 +46,7 @@ body {
 
 .copyright{
     padding-bottom: 20px;
-    background-color: #fff;
+    background-color: #333;
 }
 
 .copyright h1{
