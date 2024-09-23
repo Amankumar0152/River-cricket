@@ -28,7 +28,7 @@
 /* Optional: Add container styling */
 .container {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 50px; /* main page margin from top */
 }
 
 .navbar {
@@ -135,12 +135,8 @@
     }
 }
 
-.front-text{
-    /* background-color:#bcd6f4; */
-    padding: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 .centered-text {
+    margin-top: 4px;
     display: block;
     width: 50%; /* Occupies 50% of the container */
     margin: 0 auto; /* Centers the text horizontally */
@@ -170,14 +166,9 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-.contents h3{
-    text-align: center;
-    margin: 10px;
-}
-
+/* Slideshow Gallery */
 .slideshow-container {
-    max-width: 80%;
+    max-width: 70%;
     position: relative;
     margin: auto;
     margin-bottom: 30px;
@@ -227,13 +218,11 @@
 
 /* Style for text container */
 .text-container {
-    /* background-color:#bcd6f4; */
-    /* Text container */
     padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .text-container p{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .row {

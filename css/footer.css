@@ -27,13 +27,13 @@ body {
 }
 
 .footer-section h4 {
-    color: #007BFF;
+    color:whitesmoke;
     margin-bottom: 10px;
     user-select: none;
 }
 
 .footer-section a {
-    color: #ccc;
+    color: #bebbbbbc;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -41,7 +41,7 @@ body {
 
 .footer-section a:hover {
     text-decoration: underline;
-    color: #25D366;
+    color: white;
 }
 
 .copyright{

@@ -32,3 +32,22 @@ body {
         padding: 20px;
     }    
 }
+
+.centered-text {
+    margin-top: 4px;
+    display: block;
+    width: 50%; /* Occupies 50% of the container */
+    margin: 0 auto; /* Centers the text horizontally */
+    text-align: start; /* Centers the text within the block */
+    padding-left: 0; /* No extra padding required */
+    padding-right: 0;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .centered-text {
+      width: 90%; /* On mobile, increase width to 90% */
+      padding-left: 5%; /* Less padding for mobile */
+      padding-right: 5%; /* Less padding for mobile */
+    }
+  }
