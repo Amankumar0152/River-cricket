@@ -33,7 +33,7 @@ body {
 }
 
 .footer-section a {
-    color: #bebbbbbc;
+    color: rgb(170, 170, 170);
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
