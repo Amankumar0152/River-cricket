@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact-us.css">
     <script src="https://kit.fontawesome.com/2917500283.js" crossorigin="anonymous"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
     <link rel="icon" href="icons/red-ball.png">
     <meta name="theme-color" content="#0972e3">
     <title>Contact-Us</title>
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAgQlpsudfSw6DLN" data-callback="javascriptCallback"></div>
 </head>
     <div class="container">
         <div class="header">
@@ -22,29 +22,13 @@
         
         <div class="social-links">
             <h2>For any help chat-us on WhatsApp</h2>
-            <form action="/login" method="POST">
-                <input type="text" placeholder="username"/>
-                <input type="password" placeholder="password"/>
-                <div class="#example-container" data-sitekey="<0x4AAAAAAAgQlpsudfSw6DLN>"></div>
-                <button type="submit" value="Submit">Log in</button>
-             </form>
-             <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
-            <h1><a aria-label="Chat on WhatsApp" href="https://wa.me/9565194075"> <img alt="Chat on WhatsApp" src="contact-img/WhatsAppButtonGreenLarge.png" /><a/></h1>            
+            <h1><a aria-label="Chat on WhatsApp" href="https://wa.me/9565194075"> <img alt="Chat on WhatsApp" src="contact-img/WhatsAppButtonGreenLarge.png" /><a/></h1>        
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAAA0CA_BTLBwy3vAO"></div>    
             <a href="https://www.amankumar.cloud/"><i class="fa-solid fa-earth-asia"></i></a>
             <a href="https://twitter.com/piratesaman"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://wa.me/9565194075" class="wa"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
         </div>
     </div>
-    <script>
-        window.onloadTurnstileCallback = function () {
-    turnstile.render('#example-container', {
-        sitekey: '<0x4AAAAAAAgQlpsudfSw6DLN>',
-        callback: function(token) {
-            console.log(`Challenge Success ${token}`);
-        },
-    });
-};
-    </script>
 </body>
 </html>
