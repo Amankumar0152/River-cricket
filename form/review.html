@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advertisement Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+
 </head>
 <body>
     <div class="form-container">
@@ -19,6 +21,7 @@
             <label for="comment">About Advertisement:</label>
             <textarea id="comment" name="comment" rows="4" required></textarea>
             
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAA0CA_BTLBwy3vAO"></div>
             <button type="submit">Submit</button>
         </form>
     </div>
