@@ -39,7 +39,7 @@ if ($result && isset($result['success']) && $result['success'] === true) {
 	// Verification successful, proceed with sending the email
 
 	// Set recipient email address
-	$recipient = 'Enter Recipient Email Address';
+	$recipient = 'amanghostvilla@gmail.com';
 
 	// Subject
 	$subject = 'Form Submission';
