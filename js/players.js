@@ -41,7 +41,7 @@ const players = [
             born: "NA",
             birthPlace: "Varanasi",
             nickname: "Kumar",
-            height: "7 ft 8 in (146 cm)",
+            height: "5 ft 2 in (146 cm)",
             role: "Batsman",
             battingStyle: "Right Handed Bat",
             bowlingStyle: "Right-arm offbreak"
