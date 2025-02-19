@@ -10,6 +10,11 @@
     <link rel="icon" href="icons/red-ball.png">
     <meta name="theme-color" content="#ed9511">
     <link rel="stylesheet" href="css/dark-mode.css">
+    <script>
+        if (window.location.pathname.endsWith(".html")) {
+          window.history.replaceState(null, "", window.location.pathname.replace(".html", ""));
+        }
+      </script>      
 </head>
 <body>
     <header>
